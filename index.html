@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гермес Стройматериалы - Финальная Копия</title>
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ======================= HEADER (Как на ФОТО 2) ======================= -->
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container header-top-container">
+                <a href="/" class="logo">
+                    <!-- TODO: Вставить СЮДА реальный SVG логотип (как на ФОТО 2) -->
+                    <img src="img/germes_logo.png" alt="Гермес Стройматериалы">
+                </a>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </nav>
+                <!-- Блок с иконками справа от меню -->
+                
+                <!-- Контакты справа -->
+                <div class="header-contacts">
+                    <div class="header-socials">
+                        <!-- TODO: SVG иконка WhatsApp -->
+                        <a href="#" class="social-icon"><img src="img/123.png   " alt="WhatsApp"></a>
+                         <!-- TODO: SVG иконка Telegram -->
+                        <a href="#" class="social-icon"><img src="img/Main.png" alt="Telegram"></a>
+                    </div>
+                     <!-- <svg class="icon icon-phone-small" ...></svg> --> <!-- Иконку телефона можно добавить сюда -->
+                    <div class="header-contacts-text">
+                         <a href="tel:88435581318" class="header-phone">8 (843) 558-13-18</a>
+                         <a href="#" class="callback-link">заказать обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container header-bottom-container">
+                 <div class="header-bottom-left">
+                    <button type="button" class="btn btn-catalog">
+                        <!-- TODO: Вставить SVG иконку бургера -->
+                        <svg class="icon icon-burger" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg> <!-- Пример иконки -->
+                        Каталог
+                    </button>
+                    <a href="#" class="promo-link">Акции</a>
+                 </div>
+                 <form class="search-form">
+                    <input type="text" placeholder="Введите название товара">
+                    <button type="submit">
+                        <!-- TODO: Вставить SVG иконку поиска -->
+                        <svg class="icon icon-search" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg> <!-- Пример иконки -->
+                    </button>
+                </form>
+                 <nav class="header-bottom-nav">
+                     <a href="#">О компании</a>
+                     <a href="#">Контакты</a>
+                 </nav>
+                 <button type="button" class="btn btn-primary btn-bottom-order">Оптовый заказ</button>
+            </div>
+        </div>
+    </header>
+    <!-- ======================= /HEADER ======================= -->
+
+
+    <!-- ======================= MAIN (Структура как у Казанского сайта) ======================= -->
+    <main class="site-main">
+        <!-- Секция Hero как на Казанском сайте (Каталог слева, баннер справа) -->
+        <section class="hero-section">
+            <div class="container hero-container">
+                <aside class="category-menu">
+                     <!-- TODO: Проверить актуальность категорий для ФОТО 2 -->
+                    <ul>
+                        <li><a href="#">Стеновые материалы <span class="arrow">></span></a></li>
+                        <li><a href="#">Фасадные материалы <span class="arrow">></span></a></li>
+                        <li><a href="#">Строительные блоки <span class="arrow">></span></a></li>
+                        <li><a href="#">Отделочные материалы <span class="arrow">></span></a></li>
+                        <li><a href="#">Сухие смеси <span class="arrow">></span></a></li>
+                        <li><a href="#">Благоустройство <span class="arrow">></span></a></li>
+                        <li><a href="#">Лако-красочные материалы <span class="arrow">></span></a></li>
+                        <li><a href="#">Прочие услуги <span class="arrow">></span></a></li>
+                        <li><a href="#" class="active">Распродажа товаров <span class="arrow">></span></a></li>
+                    </ul>
+                </aside>
+                <div class="hero-main-content"> <!-- Обертка для основного контента справа -->
+                     <!-- TODO: Заменить на баннер или слайдер как на ФОТО 2, если он там есть -->
+                     <!-- Пример статичного баннера из Казанской версии -->
+                    <div class="hero-banner-kazan">
+                        <div class="banner-image">
+                            <img src="img/photo (1).png" alt="Баннер Кирпич">
+                            <span class="badge badge-promo">Лучшая цена</span>
+                        </div>
+                        <div class="banner-info">
+                            <h1>Кирпич облицовочный М95 Воткинский</h1>
+                            <p class="banner-spec">Кол-во на поддоне, шт. - 297</p>
+                            <p class="banner-spec">Формат одинарный</p>
+                            <div class="banner-tags">
+                                <span class="tag tag-delivery">бесплатная доставка</span>
+                                <span class="tag tag-stock">в наличии</span>
+                            </div>
+                            <div class="banner-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                            <div class="banner-actions">
+                                <button class="btn btn-secondary btn-one-click">Купить в 1 клик</button>
+                                <button class="btn btn-icon btn-cart">
+                                    <!-- Иконка корзины -->
+                                    <svg class="icon icon-cart" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M5.58398 15.8334C4.95065 15.8334 4.42565 16.3584 4.42565 16.9917C4.42565 17.6251 4.95065 18.1501 5.58398 18.1501C6.21732 18.1501 6.74232 17.6251 6.74232 16.9917C6.74232 16.3584 6.21732 15.8334 5.58398 15.8334ZM14.4173 15.8334C13.784 15.8334 13.259 16.3584 13.259 16.9917C13.259 17.6251 13.784 18.1501 14.4173 18.1501C15.0507 18.1501 15.5757 17.6251 15.5757 16.9917C15.5757 16.3584 15.0507 15.8334 14.4173 15.8334ZM5.83148 11.9917L6.83398 13.8334H13.6098C14.2265 13.8334 14.7473 13.4551 14.9848 12.9084L17.9073 7.49008C18.0081 7.28842 18.0081 7.05842 17.9073 6.85675C17.8065 6.65508 17.6173 6.52508 17.4015 6.52508H4.80982L4.19898 5.37508L3.31815 1.85008H1.66732C1.17482 1.85008 0.833984 1.47175 0.833984 1.00008C0.833984 0.528417 1.17482 0.150083 1.66732 0.150083H3.86482C4.24315 0.150083 4.57565 0.39175 4.71648 0.74175L5.72732 4.82508H16.6673C17.3007 4.82508 17.7932 5.41175 17.6173 6.01175L14.6948 11.4292C14.3448 12.0751 13.6681 12.5251 12.9273 12.5251H7.30065L6.52232 13.9834C6.42148 14.1851 6.42148 14.4151 6.52232 14.6167C6.62315 14.8184 6.81232 14.9484 7.02815 14.9484H14.4173C14.9098 14.9484 15.2507 15.3267 15.2507 15.7984C15.2507 16.2701 14.9098 16.6484 14.4173 16.6484H6.48648C5.61148 16.6484 4.86065 16.1484 4.57565 15.3817L3.40982 12.4567C3.29398 12.1651 3.00898 11.9917 2.68398 11.9917H1.66732C1.17482 11.9917 0.833984 11.6134 0.833984 11.1417C0.833984 10.6701 1.17482 10.2917 1.66732 10.2917H2.93648L5.83148 11.9917Z" /></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Блок "Features" под баннером/слайдером -->
+                    <div class="features-block">
+                        <!-- TODO: Вставить иконки и текст как на ФОТО 2, если они там есть -->
+                        <!-- Пример из Казанской версии -->
+                        <div class="feature-item">
+                           <svg class="icon feature-icon" width="32" height="32" viewBox="0 0 32 32"><path d="..."/></svg>
+                           <p>Доставка стройматериалов<br>и аренда спецтехники</p>
+                        </div>
+                        <div class="feature-item">
+                           <svg class="icon feature-icon" width="32" height="32" viewBox="0 0 32 32"><path d="..."/></svg>
+                           <p>Скидки застройщикам<br>и оптовикам</p>
+                        </div>
+                        <div class="feature-item">
+                           <svg class="icon feature-icon" width="32" height="32" viewBox="0 0 32 32"><path d="..."/></svg>
+                           <p>Предлагаем<br>лучшую цену</p>
+                        </div>
+                         <div class="feature-item">
+                           <svg class="icon feature-icon" width="32" height="32" viewBox="0 0 32 32"><path d="..."/></svg>
+                           <p>Работаем 7 дней<br>в неделю</p>
+                        </div>
+                    </div>
+                </div> <!-- /hero-main-content -->
+            </div>
+        </section>
+
+        <!-- Секция Спецпредложения (Оставить структуру, наполнить актуальными товарами) -->
+        <section class="special-offers section-padding">
+             <div class="container">
+                 <div class="section-header">
+                    <h2>Спецпредложения</h2>
+                    <a href="#" class="link-arrow">Перейти в раздел скидок <span class="arrow">→</span></a>
+                </div>
+                 <div class="product-grid">
+                    <!-- TODO: Заменить контент и картинки ВСЕХ карточек на реальные -->
+                    <!-- Пример карточки -->
+                    <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                      <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                      <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                      <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                      <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                      <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                      <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                      <div class="product-card">
+                        <div class="product-card-header">
+                             <span class="badge badge-orange">Лидер продаж</span>
+                             <button class="btn-icon btn-favorite">
+                                <a href="#" class="icon icon-cart-small"><img src="img/123.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                         <a href="#" class="product-image-link">
+                             <img src="img/1.png" alt="Продукт">
+                         </a>
+                         <h3 class="product-title"><a href="#">Кирпич облицовочный M95
+Воткинский</a></h3>
+                         <p class="product-spec">Кол-во на поддоне, шт. - 297</p>
+                         <p class="product-spec">Формат одинарный</p>
+                         <div class="product-tags">
+                             <span class="tag tag-delivery-small">бесплатная доставка</span>
+                             <span class="tag tag-stock-small">в наличии</span>
+                         </div>
+                         <div class="product-price">4 500 ₽ <span class="price-unit">/ шт</span></div>
+                         <div class="product-actions">
+                             <button class="btn btn-secondary btn-small btn-one-click">Купить в 1 клик</button>
+                             <button class="btn btn-icon btn-cart-small">
+                                <a href="#" class="icon icon-cart-small"><img src="img/Main.png" alt="Telegram"></a>
+                             </button>
+                         </div>
+                     </div>
+                     
+                     <!-- Добавить еще 7 карточек -->
+                 </div>
+                 
+                     <!-- Добавить еще 7 карточек -->
+                 </div>
+                 
+             </div>
+             
+        </section>
+
+        <!-- Секция Проекты (Оставить структуру, наполнить актуальными проектами) -->
+        <section class="projects-section section-padding bg-light">
+             <div class="container">
+                 <div class="section-header">
+                    <h2>Проект из наших стройматериалов</h2>
+                    <a href="#" class="link-arrow">Смотреть все проекты <span class="arrow">→</span></a>
+                </div>
+                 <div class="swiper projects-slider">
+                     <div class="swiper-wrapper">
+                         <!-- TODO: Заменить картинки и текст -->
+                         <div class="swiper-slide project-slide">
+                             <img src="img/Снимок экрана 2020-09-30 в 16.52 5 (1).svg" alt="Проект 1">
+                         </div>
+                         <div class="swiper-slide project-slide project-slide--card">
+                             <h3>Аэропорт Казань</h3>
+                             <p>Комплекс услуг по доставке товара на Ваш строительный объект. Комплекс услуг по доставке.</p>
+                             <a href="#" class="btn btn-outline">Перейти к объекту</a>
+                         </div>
+                         <div class="swiper-slide project-slide">
+                             <img src="img/Снимок экрана 2020-09-30 в 16.52 6.png" alt="Проект 3">
+                         </div>
+                     </div>
+                     <div class="swiper-pagination projects-pagination"></div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- Секция Услуги (Оставить структуру, наполнить актуальными услугами) -->
+        <section class="services-section section-padding">
+             <div class="container">
+                 <h2>Дополнительные услуги</h2>
+                 <div class="services-grid">
+                     <!-- TODO: Заменить иконки и текст -->
+                     <div class="service-card">
+                         <div class="service-icon-wrapper">
+                              <img class="icon service-icon" src="img/Icon.png" alt="">
+                         </div>
+                         <h3>Доставка стройматериалов</h3>
+                         <p>Комплекс услуг по доставке товара 
+на Ваш строительный объект</p>
+                     </div>
+                      <div class="service-card service-card--accent">
+                          <div class="service-icon-wrapper">
+                              <img class="icon service-icon" src="img/Icon (1).png" alt="">
+                          </div>
+                          <h3>Шеф-монтаж</h3>
+                          <p>Демонстрация секретов успешного
+строительства</p>
+                      </div>
+                      <div class="service-card">
+                          <div class="service-icon-wrapper">
+                              <img class="icon service-icon" src="img/Icon (2).png" alt="">
+                          </div>
+                          <h3>Кладка кирпича</h3>
+                          <p>Кладка кирпича и блоков Pototherm</p>
+                      </div>
+                       <div class="service-card">
+                          <div class="service-icon-wrapper">
+                              <img class="icon service-icon" src="img/Icon (3).png" alt="">
+                          </div>
+                          <h3>Сезонное хранение</h3>
+                          <p>Хранение стройматериалов
+приобретенных зимой</p>
+                      </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- Секция Шоурум (Оставить структуру, наполнить актуальными фото) -->
+        <section class="showroom-section section-padding bg-light">
+             <div class="container">
+                 <div class="section-header">
+                    <h2>Наш шоурум</h2>
+                    <a href="#" class="link-arrow">Перейти в контакты <span class="arrow">→</span></a>
+                </div>
+                 <div class="showroom-grid">
+                     <!-- TODO: Вставить картинки шоурума -->
+                    <img src="img/showroom1.png" alt="Шоурум 1">
+                    <img src="img/showroom2.png" alt="Шоурум 2">
+                    <img src="img/showroom3.png" alt="Шоурум 3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Бренды (Оставить структуру, наполнить актуальными лого) -->
+        <section class="brands-section section-padding">
+            <div class="container">
+                <div class="swiper brands-slider">
+                    <div class="swiper-wrapper">
+                        <!-- TODO: Вставить логотипы брендов -->
+                        <div class="swiper-slide brand-slide"><img src="img/part1.png" alt="Бренд"></div>
+                        <div class="swiper-slide brand-slide"><img src="img/part2.png" alt="Бренд"></div>
+                        <div class="swiper-slide brand-slide"><img src="img/part3.png" alt="Бренд"></div>
+                        <div class="swiper-slide brand-slide"><img src="img/part4.png" alt="Бренд"></div>
+                        <div class="swiper-slide brand-slide"><img src="img/part5.png" alt="Бренд"></div>
+                        <div class="swiper-slide brand-slide"><img src="img/part6.png" alt="Бренд"></div>
+                        <div class="swiper-slide brand-slide"><img src="img/part7.png" alt="Бренд"></div>
+                    </div>
+                    <div class="swiper-button-prev brands-prev">
+                         <svg width="24" height="24" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </div>
+                    <div class="swiper-button-next brands-next">
+                          <svg width="24" height="24" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ======================= /MAIN ======================= -->
+
+
+    <!-- ======================= FOOTER (Структура как у Казанского сайта) ======================= -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+             <!-- TODO: Проверить актуальность ссылок и контактов для ФОТО 2 -->
+            <div class="footer-column">
+                <h4>Организация</h4>
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </div>
+             <div class="footer-column">
+                <h4>Как купить</h4>
+                 <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+             <div class="footer-column">
+                <h4>Мы на связи</h4>
+                <a href="tel:88435581318" class="footer-phone">8 (843) 558-13-18</a> <!-- Телефон как в шапке -->
+                <a href="mailto:info@td-germes.ru" class="footer-email">info@td-germes.ru</a> <!-- Email для примера -->
+                <div class="footer-socials">
+                    <a href="#" class="social-icon"><img src="img/whh_whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#" class="social-icon"><img src="img/logos_telegram.png" alt="Telegram"></a>
+                </div>
+            </div>
+             <div class="footer-column">
+                <h4>Наш адрес</h4>
+                 <!-- TODO: Вставить актуальный адрес -->
+                <p>Город<br>Улица, дом, офис</p>
+                <p class="footer-worktime">Пн - Пт с 9:00 до 18:00<br>Сб - Вс выходной</p>
+            </div>
+             <div class="footer-column footer-column-button">
+                 <!-- Кнопка заказа может быть и не нужна в футере версии 2 -->
+                 <!-- <button class="btn btn-primary btn-footer-order">Оптовый заказ</button> -->
+             </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <div class="footer-copyright">
+                     <!-- TODO: Вставить актуальный копирайт -->
+                    <p>© 2012 — 2023, ООО «ТК «Гермес»</p>
+                    <p>Сайт носит информационный характер и не является публичной офертой.</p>
+                </div>
+                <div class="footer-payments">
+                    <img src="img/visa.png" alt="Visa">
+                    <img src="img/mastercard.png" alt="Mastercard">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ======================= /FOOTER ======================= -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Свой JS -->
+    <script src="script.js"></script>
+</body>
+</html>
